@@ -2,15 +2,15 @@ export class Person {
     static COUNTRY : string = "Thailand"
     firstname? : string ;
     lastname? : string ;
-    private setAge? : number ;
+    private age? : number = 25 ;
 
-    // setAge(age = number){
-    //     this.age = age;
-    // }
+    setAge(age : number){
+        this.age = age;
+    }
 
-    // getAge(): number {
-    //     return this.age ;
-    // }
+    getAge(): number {
+        return this.age ;
+    }
 
     getFullName() {
         return (this.firstname + " " + this.lastname);
