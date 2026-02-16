@@ -2,7 +2,7 @@ export class Person {
     static COUNTRY : string = "Thailand"
     firstname? : string ;
     lastname? : string ;
-    private age? : number = 25 ;
+    private age : number = 25 ;
 
     setAge(age : number){
         if (isNaN(age)){
