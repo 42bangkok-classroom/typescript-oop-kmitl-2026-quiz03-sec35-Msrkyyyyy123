@@ -1,8 +1,8 @@
 export class Student {
-    firstname : string
-    lastname : string
+    firstname? : string ;
+    lastname? : string ;
 
-    printSName(){
+    printName():void{
     console.log(this.firstname + '' + this.lastname)
 }
 }
