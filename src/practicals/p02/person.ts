@@ -5,7 +5,9 @@ export class Person {
     private age? : number = 25 ;
 
     setAge(age : number){
+        if (isNaN(age)){
         this.age = age;
+        }
     }
 
     getAge(): number {
